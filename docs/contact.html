@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naura Portofolio - Form Kontak</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Contact</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="portofolio.html">Portofolio</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="contact">
+    <h2>Form Request Project</h2>
+    <form>
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" name="nama" placeholder="Masukkan nama anda">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Masukkan email anda">
+
+      <label for="layanan">Jenis Layanan:</label>
+      <select id="layanan" name="layanan" required>
+        <option value="">-- Pilih Layanan --</option>
+        <option value="web">Pembuatan Website</option>
+        <option value="uiux">Desain UI/UX</option>
+        <option value="konsultasi">Konsultasi Teknologi</option>
+      </select>
+
+      <label for="pesan">Deskripsi Proyek:</label>
+      <textarea id="pesan" name="pesan" rows="4" required></textarea>
+
+      <label>
+        <input type="checkbox" required> Saya menyetujui syarat dan ketentuan
+      </label>
+
+      <button type="submit">Kirim</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Naura Putri Ahda Asty | <a href="https://itpln.ac.id">IT-PLN</a></p>
+  </footer>
+</body>
+</html>

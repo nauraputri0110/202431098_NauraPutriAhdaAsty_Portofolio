@@ -1,0 +1,165 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #ffe6f0; 
+  color: #333;
+}
+
+header {
+  background-color: #ff80ab; 
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+nav a.active, nav a:hover {
+  background-color: #ffb6c1;
+  border-radius: 15px;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding: 20px;
+}
+
+.hero-text {
+  max-width: 400px;
+  margin-left: 20px;
+}
+
+
+.hero img {
+  width: 150px;
+  border-radius: 50%;
+  margin: 15px;
+  object-fit: cover;
+  border: 2px solid #ff80ab;
+}
+
+.hero-text h1 {
+  color: #ff4f84;
+  font-size: 20px;
+}
+
+section {
+  background-color: white;
+  margin: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+}
+
+h2 {
+  color: #ff4f84;
+  border-bottom: 2px solid #ffb6c1;
+  padding-bottom: 5px;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #ffd1dc;
+}
+
+.skill {
+  margin-bottom: 10px;
+}
+
+.progress {
+  background-color: #eee;
+  height: 10px;
+}
+
+.progress-fill {
+  background-color: #ff80ab;
+  height: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+input, select, textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #ff80ab;
+  color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff4f84;
+}
+
+footer {
+  background-color: #ff80ab;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .hero-text {
+    margin-left: 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+}
